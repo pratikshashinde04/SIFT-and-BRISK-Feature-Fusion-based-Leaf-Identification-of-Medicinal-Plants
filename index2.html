@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Medicinal System</title>
+
+    <style>
+        .homepage {
+            width: 100%;
+            height: 600px;
+            opacity: 0.4;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .img-overlay {
+            width: 100%;
+            height: 76vh;
+            background-color: #111818;
+        }
+        
+        .centered {
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            font-size: 35px;
+            transform: translate(-50%, -50%);
+            font-family: none;
+            color: #ebf1ed;
+            justify-content: baseline;
+        }
+        
+        .spanning {
+            color: #f0f250;
+            font-size: 25px;
+        }
+        
+        .btn-1 {
+            position: absolute;
+            top: 60%;
+            left: 44%;
+            transform: translate(-50%, -50%);
+            width: 196px;
+            background: #d2ebcb;
+            color: rgb(25, 138, 31);
+            font-size: 22px;
+            border-radius: 10px;
+            border-color: transparent;
+            font-weight: 600;
+            border-color: #1cc131;
+            height: 55px;
+            margin-left: 175px;
+        }
+        
+        .btn-1:hover {
+            background-color: #fcf8f6;
+            color: rgb(63, 207, 31);
+            cursor: pointer;
+            border-color: #1cc131;
+        }
+        
+        
+        /* services */
+        
+        #services {
+            padding: 30px 0;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .services-list div {
+            background: #d2edcb;
+            padding: 40px;
+            font-size: 18px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+            text-align: center;
+        }
+        
+        .services-list div i {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        
+        .services-list div h2 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .services-list div p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .services-list div a {
+            text-decoration: none;
+            color: #0a0606;
+            font-size: 12px;
+            margin-top: 20px;
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .services-list :hover {
+            background: #9ede5e;
+            transform: translateY(-10px);
+        }
+        
+        .medical-plant {
+            text-align: center;
+            height: 400px
+        }
+        
+        .medical-plant h1 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        
+        /* new  */
+        
+        
+        /* === Google Font Import - Poppins === */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        } */
+        
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f2f2;
+        }
+        
+        section {
+            position: relative;
+            height: 450px;
+            /* width: 1075px; */
+            display: flex;
+            align-items: center;
+            margin-left: 110px;
+            margin-right: 110px;
+            margin-top: 293px;
+        }
+        
+        .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+            box-sizing: content-box;
+        }
+        
+        .swiper {
+            width: 950px;
+        }
+        
+        .card {
+            position: relative;
+            background: #fff;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            height: 40%;
+            width: 100%;
+            background: #57b53f;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .card .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            position: relative;
+            z-index: 100;
+        }
+        
+        section .card .image {
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            padding: 3px;
+            background: #f3f3f4;
+        }
+        
+        section .card .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        
+        .card .media-icons {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .card .media-icons i {
+            color: #fff;
+            opacity: 0.6;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card .media-icons i:hover {
+            opacity: 1;
+        }
+        
+        .card .name-profession {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            /* color: ; */
+        }
+        
+        .name-profession .name {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .name-profession .profession {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .name-profession .salary {
+            color: gray;
+            margin-top: 3px;
+        }
+        
+        .card .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 18px;
+        }
+        
+        .card .rating i {
+            font-size: 18px;
+            margin: 0 2px;
+            color: #397a28;
+        }
+        
+        .card .button {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .card .button button {
+            background: rgb(25, 138, 31);
+            outline: none;
+            border: none;
+            color: #fff;
+            padding: 8px 22px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .button button:hover {
+            background: rgb(25, 138, 31);
+        }
+        
+        .swiper-pagination {
+            position: absolute;
+        }
+        
+        .swiper-pagination-bullet {
+            height: 7px;
+            width: 26px;
+            border-radius: 25px;
+            background: #7d2ae8;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            opacity: 0.7;
+            color: #7d2ae8;
+            transition: all 0.3s ease;
+        }
+        
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            opacity: 1;
+            color: #7d2ae8;
+        }
+        
+        
+        /* new sectiom */
+        
+        .container5 {
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            font-weight: normal;
+            font-size: 35px;
+            position: relative;
+            margin: 40px 0;
+        }
+        
+        .photo-gallery {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 4px lightgray;
+            cursor: pointer;
+        }
+        
+        .pic {
+            position: relative;
+            height: 230px;
+        }
+        
+        .pic img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        .pic::before {
+            content: "";
+        }
+        
+        .more a {
+            text-decoration: none;
+            background-color: #d2ebcb;
+            -webkit-text-decoration-skip: objects;
+            padding: 10px;
+            font-size: 24px;
+            color: #fff;
+            border-radius: 10px;
+            margin: 24px;
+            width: 30px;
+            border-color: green;
+            color: #18520a;
+            font-weight: 500;
+        }
+        
+        .more a:hover {
+            color: white;
+            background-color: #57b53f;
+            transition: 0.5;
+        }
+        
+        .new {
+            margin-top: 60px;
+            background: #c8ffc8;
+            color: black;
+            height: 308px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .text-center {
+            text-align: center!important;
+            color: black;
+        }
+        
+        .text-center p-4 {
+            background-color: #c8ffc8;
+        }
+
+        #image-input {
+            position: absolute;
+            top: 60%;
+            left: 37%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background: #d2ebcb;
+            color: rgb(25, 138, 31);
+            font-size: 22px;
+            border-radius: 10px;
+            border-color: transparent;
+            font-weight: 600;
+            border-color: #1cc131;
+            height: 55px;
+            margin-left: 5px;
+        }
+
+        #image-preview-container{
+            text-align: center;
+            padding-bottom: 20px; 
+            font-weight: 700 !important; 
+    
+        }
+
+        #uploaded-image{
+            height: 295px;
+            width: 295px
+        }
+
+        #prediction-result{
+            text-align:center;
+            padding-bottom: 0px;  
+            font-weight: 500 !important; 
+        }
+        #predicted-class{
+            text-align:center;
+            padding-bottom: 0px;
+            font-weight: 500 !important; 
+            font-size: 27px;  
+        }
+    </style>
+
+<body>
+
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Home </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Prediction Result <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Uses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Gallary</a>
+                    </li>
+                </ul>
+                <form action="/search" class="form-inline my-2 my-lg-0" method="POST">
+                    <input name="keyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                
+                
+                
+            </div>
+        </nav>
+    </nav>
+
+
+    <div class="homeimg">
+        <div class="img-overlay">
+            <img src="static/ayurveda.jpg" alt="" class="homepage">
+        </div>
+        <div class="centered"><b>HerbVision: Medicinal Plant Identifier  <br><span class="spanning">Search to Get the information about Medical Plant.</b></span>
+        </div>
+
+        <form id="predict-form" enctype="multipart/form-data" class="form-container">
+            <input id="image-input" type="file" name="image" accept="image/*">
+            <button class= "btn-1" id="predict-button" type="button">Predict</button>
+        </form>
+    </div>
+
+     <!-- Container to display uploaded image -->
+     <div id="image-preview-container">
+        <h1>Uploaded Image Preview</h1>
+        <img id="uploaded-image" src="#" alt="Uploaded Image Preview">
+    </div>
+
+    <!-- Container to display prediction result -->
+    <div id="prediction-result">
+        <h1>Prediction Result:</h1>
+        <p id="predicted-class"></p>
+    </div>
+
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-seedling"></i>
+                    <h2>Herbal Medicine</h2>
+
+                    <p>
+                        Herbal medications are a broad category of all-natural therapies made from plants that may have advantages based on both contemporary scientific research and customary usage. </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-nutritionix"></i>
+                    <h2>Harbal Nutrition</h2>
+                    <p>
+                        Global multi-level marketing company Herbalife Nutrition offers weight-management, sports nutrition, dietary supplements, and personal care items. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h2>Harbal Products</h2>
+
+                    <p>
+                        With care, a wide variety of natural treatments are developed by Harbal Products to support overall well-being. </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="medical-plant">
+        <h1>Why Herbal Plants ?</h1>
+        <img src="static/medicinal.png" alt="">
+
+    </div>
+    <section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/tulasi.jpeg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Tulsi </span>
+                            <span class="profession">Ocimum tenuiflorum</span>
+                            <span class="salary">Ocimum tenuiflorum</span>
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="aboutMe" onclick="redirectToTulasi()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/adulasa.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Adulsa </span>
+                            <span class="profession">Justicia adhatoda</span>
+                            <span class="salary"> Acanthaceae</span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectToadulasa()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/alovera.jpg" alt="">
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">Aloe vera</span>
+                            <span class="profession">Aloe vera</span>
+                            <span class="salary"> Asphodelaceae</span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectToAlovera()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/Am.jpeg" alt="">
+                        </div>
+
+
+                        <div class="name-profession">
+                            <span class="name">Argemone mexicana</span>
+                            <span class="profession">Mexican poppy</span>
+                            <span class="salary">Mexican prickly poppy</span>
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/cd.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Calotropis gigantea</span>
+                            <span class="profession">crown flower</span>
+                            <span class="salary">Calotropis gigantea</span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectTogms ()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/Neem.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Neem</span>
+                            <span class="profession">Azadirachta indica</span>
+                            <span class="salary"> Meliaceae</span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectToneem()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/peru.jpeg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Guava</span>
+                            <span class="profession">Goyave</span>
+                            <span class="salary"> Myrtaceae</span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectToguava ()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/Am.jpeg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Argemone mexicana</span>
+                            <span class="profession">Mexican poppy</span>
+                            <span class="salary">Mexican prickly poppy</span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectToneem()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="static/b1.jpeg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Giloy</span>
+                            <span class="profession">Tinospora cordifolia</span>
+                            <span class="salary"> gurbel </span>
+
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="hireMe" onclick="redirectTogiloy ()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <div class="container5">
+        <h1>Photo Gallery</h1>
+
+        <div class="photo-gallery">
+            <div class="pic place">
+                <a href="#"><img src="static/rui1.jpeg" alt=""></a>
+
+            </div>
+            <div class="pic family">
+                <a href="#"> <img src="static/g5.jpeg" alt=""></a>
+
+            </div>
+            <div class="pic child">
+                <a href="#"> <img src="static/b4.jpeg" alt="">
+                </a>
+            </div>
+            <div class="pic place">
+
+                <a href="#"> <img src="static/n6.jpeg" alt=""></a>
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic place">
+                <a href="#"> <img src="static/t4.jpeg" alt=""></a>
+
+            </div>
+            <div class="pic family">
+                <a href="#"> <img src="static/alovera.jpg" alt=""></a>
+
+            </div>
+            <div class="pic child">
+
+                <a href=""><img src="static/nirgili.jpeg" alt=""></a>
+            </div>
+            <div class="pic place">
+                <a href="#"><img src="static/adulasa.jpg" alt=""></a>
+
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic place">
+
+                <a href=""><img src="static/p2.jpeg" alt=""></a>
+            </div>
+            <div class="pic family">
+                <a href=""><img src="static/a6.jpeg" alt=""></a>
+
+            </div>
+            <div class="pic child">
+                <a href=""> <img src="static/s1.jpg" alt="">
+                </a>
+            </div>
+            <div class="pic place">
+                <a href=""> <img src="static/nir2.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <!-- Section: Social media -->
+            <!-- Left -->
+
+            <!-- Left -->
+
+            <!-- Right -->
+
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="new">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                               SIFT and BRISK Feature Fusion based Leaf Identification of Ayurvedic Medicinal Plants
+                            </h6>
+                            <p>
+                                SIFT and BRISK Feature Fusion based Leaf Identification of Ayurvedic Medicinal Plants                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Home
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Prediction Result</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Uses</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Gallery</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Bibwewadi, Upper Indira Nagar, VIT College,  411004, Pune</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i> medical.plant@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <script>
+            document.getElementById('predict-button').addEventListener('click', function() {
+                var formData = new FormData();
+                var imageInput = document.getElementById('image-input');
+                var uploadedImage = document.getElementById('uploaded-image');
+                var predictedClass = document.getElementById('predicted-class');
+        
+                formData.append('image', imageInput.files[0]);
+        
+                var reader = new FileReader();
+                reader.onload = function(event) {
+                    uploadedImage.src = event.target.result;
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+        
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/predict', true);
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        predictedClass.textContent = 'The predicted medicinal plant is : ' + response.predicted_class;
+                    }
+                };
+                xhr.send(formData);
+            });
+        </script>
+
+        <script>
+            function redirectToAlovera() {
+                window.location.href = "/alovera";
+            }
+
+            function redirectToTulasi() {
+                window.location.href = "/tulasi";
+            }
+            function redirectToadulasa() {
+                window.location.href = "/adulasa";
+            }
+            function redirectTogiloy() {
+                window.location.href = "/giloy";
+            }
+            function redirectToguava() {
+                window.location.href = "/guava";
+            }
+            function redirectToneem() {
+                window.location.href = "/neem";
+            }
+            function redirectTogms() {
+                window.location.href = "/Giant Milkweed";
+            }
+            
+        </script>
+
+</body>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<script src="https://kit.fontawesome.com/450d12ebfe.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</html>

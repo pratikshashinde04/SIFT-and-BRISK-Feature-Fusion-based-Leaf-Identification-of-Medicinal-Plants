@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="plant.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+
+        .row {
+            margin: 60px;
+            margin-left: 100px !important;
+            width: 80%;
+            display: grid !important;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px 30px;
+        }
+        
+        .row .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .row .right {
+            /* display: flex; */
+            align-items: center;
+            width: 114%;
+        }
+        
+        .row .right .content {
+            padding-left: 50px;
+            --bs-gutter-x: -13.5rem;
+        }
+        
+        .row .right p {
+            text-align: justify;
+            margin-left: 40px;
+            margin-top: 22px;
+            margin-bottom: 1rem;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .right h2 {
+            color: #0c8808;
+            font-size: 50px;
+        }
+        
+        .spannin2 {
+            color: #d96328;
+            font-size: 40px;
+        }
+        
+        .right .para {
+            margin-left: 59px;
+            font-family: cursive;
+        }
+        
+        .btn2 {
+            width: 145px;
+            height: 49px;
+            border-radius: 12px;
+            background: #1b196c;
+            color: white;
+            border-radius: 10px;
+            font-size: 17px;
+            margin-left: 197px !important;
+            margin: 20px;
+            border-color: transparent;
+        }
+        
+        
+        /* text-decoration: none;
+            font-size: larger;
+            font-weight: 700; */
+        
+        li {
+            text-decoration: none;
+            font-size: larger;
+            font-weight: 700;
+            color: #0e710d;
+            ;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            font-size: 33px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        
+        .benefit {
+            margin-left: 250px;
+            margin-top: 25px;
+            margin-right: 250px;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        .benefit span {
+            font-weight: 700;
+        }
+        
+        .findme {
+            text-align: center;
+            color: #fcfdfd;
+            text-decoration: none;
+            text-align: center;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+            margin-left: 43%;
+            background: #2aa534;
+            padding: 10px 69px;
+            font-size: 23px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        
+        .findme:hover {
+            color: green;
+            background-color: antiquewhite;
+            text-decoration: none;
+        }
+        
+        .photo-gallery {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 4px lightgray;
+            cursor: pointer;
+        }
+        
+        .pic {
+            position: relative;
+            height: 230px;
+        }
+        
+        .pic img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        .pic::before {
+            content: "";
+        }
+        
+        .location {
+            width: 100%;
+            height: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="row">
+        <div class="left">
+            <img src="static/gmain.jpeg" alt="">
+        </div>
+
+        <div class="right">
+            <h2><b>Guava [पेरु]</b></span>
+            </h2>
+            <p>Guava is a tropical fruit celebrated for its sweet and slightly tangy flavor, packed with essential vitamins and antioxidants, particularly vitamin C, fiber, and potassium. Its consumption is linked to numerous health benefits, including improved
+                digestion, immune system support, and enhanced heart health. Not only is the fruit beneficial, but its leaves also have medicinal properties, making guava a versatile and valuable addition to a healthy diet.</p>
+
+            <li>
+                <ul>
+                    Kingdom: Plantae
+                    <br><br> Scientific Name: Psidium guajava
+                    <br><br> Common Name: Guava
+                    <br><br> Family: Myrtaceae
+                    <br><br> Subfamily: Myrtoideae
+                    <br><br> Genus: Psidium
+                    <br><br> Species: P. guajava </ul>
+            </li>
+
+
+        </div>
+    </div>
+
+    <div class="benefits">
+        <h2>Benefits Of Guava</h2>
+        <p class="benefit">
+            <span>Rich in Nutrients:</span> Guava is an excellent source of vitamin C, providing more than three times the Recommended Daily Allowance (RDA) in a single fruit. It's also rich in vitamin A, fiber, potassium, and antioxidants.
+            <br><br>
+            <span>Boosts Immune System:</span> The high vitamin C content helps boost the immune system, making it more effective in warding off infections and diseases.
+            <br><br>
+
+            <span>Improves Heart Health:</span> Guava can improve heart health by lowering blood pressure and blood cholesterol levels, thanks to its high potassium and soluble fiber content.
+            <br><br>
+
+            <span>  Aids in Digestion: </span>The dietary fiber in guava is beneficial for maintaining a healthy digestive system, helping prevent constipation and promoting regular bowel movements.
+            <br><br>
+
+            <span>  Supports Weight Loss:</span> Being low in calories and rich in fiber, guava can be a satisfying snack that supports weight management goals. </div>
+
+    <div class="benefits">
+        <h2>Side Effects Of Guava</h2>
+        <p class="benefit"><span>Digestive Issues:</span> Although dietary fiber is good for digestion, consuming too much guava can lead to digestive problems such as bloating, gas, and stomach cramps. People with a sensitive digestive system should be cautious about their
+            guava intake.
+            <br><br>
+
+            <span>Diarrhea or Constipation: </span>High amounts of fiber can cause diarrhea in some people, while in others, it might lead to constipation if adequate water intake is not maintained.
+            <br><br>
+
+            <span> Allergic Reactions:</span> Some individuals may experience allergic reactions to guava, including itching, swelling, and difficulty breathing, although such reactions are rare.
+            <br><br>
+
+            <span>Blood Sugar Levels:</span> Guava can lower blood sugar levels. While this is beneficial for many, people with diabetes who are on medication to lower their blood sugar need to monitor their blood sugar levels closely to avoid hypoglycemia.
+            <br><br>
+
+            <span>May Affect Blood Thinners: </span>Guava is high in vitamin K, which is known to affect blood clotting. People taking blood thinners should consume guava in moderation to prevent any interference with their medication.
+    </div>
+
+
+
+
+
+    <div class="container5">
+        <h2>Photo Gallery</h2>
+
+        <div class="photo-gallery">
+            <div class="pic place">
+                <img src="static/g1.jpeg" alt="">
+            </div>
+            <div class="pic family">
+                <img src="static/g2.jpeg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="static/g3.jpeg" alt="">
+            </div>
+            <div class="pic place">
+                <img src="static/g4.jpeg" alt="">
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="pic place">
+                <img src="static/g5.jpeg" alt="">
+            </div>
+            <div class="pic family">
+                <img src="static/g6.jpeg" alt="">
+            </div>
+            <div class="pic child">
+                <img src="static/g7.jpeg" alt="">
+            </div>
+            <div class="pic place">
+                <img src="static/g8.jpeg" alt="">
+            </div>
+
+
+        </div>
+
+        <div class="benefits">
+            <h2>Find the Location</h2>
+        </div>
+        <div class="map">
+            <a href="https://www.google.co.in/maps/place/R.S+MANGO+AND+GUAVA+GARDEN/@25.4052918,84.2354846,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x39f2b35b6d1795af:0x9d1e4d1d491d2411!2sGuava+Farm!8m2!3d25.3605133!4d85.0152792!16s%2Fg%2F11pzhc2y0d!3m5!1s0x398d83736dfbe13d:0x129f9fbae437b301!8m2!3d25.405287!4d84.2380595!16s%2Fg%2F11jm9m139d?entry=ttu"><img src="static/map.png" alt="" class="location"></a>
+
+        </div>
+
+</body>
+
+</html>
