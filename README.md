@@ -9,16 +9,15 @@ SIFT-and-BRISK-Feature-Fusion-based-Leaf-Identification-of-Medicinal-Plants is a
 - **Machine Learning**: Employs SVM for classifying medicinal plants based on extracted features.
 - **Web Application Prototype**: Provides a user-friendly interface for real-time plant identification.
 
-##Innovation 
- • Digital Image Processing and Machine Learning 
+  ### Innovation
+- **Digital Image Processing and Machine Learning 
 Integration
- • Geolocation Data Integration
+- **Geolocation Data Integration
  Specification
- • 10 Classes, 1980 Dataset Images 
-• Accurate prediction with detailed information of 
+- **Accurate prediction with detailed information of 
 predicted plants
- • Rural Plant Significance
- • Interactive User Platform
+- **Rural Plant Significance
+- **Interactive User Platform
  
 ### Methodology
 1. **Dataset Collection**: Images of leaves from 9 medicinal plants were collected from natural habitats.
@@ -38,6 +37,8 @@ The dataset includes images from the following plants:
 - Sandalwood
 - Tulsi
 - Giant Milkweed
+  
+(The link of dataset will be providing soon )
 
 ### System Architecture
 The system architecture involves several stages:
@@ -47,3 +48,5 @@ The system architecture involves several stages:
 
 ### Results
 The proposed system achieved high accuracy in classifying medicinal plants, demonstrating the effectiveness of combining SIFT and BRISK features with SVM classifiers. The web application prototype also showed promising results in practical scenarios.
+
+
