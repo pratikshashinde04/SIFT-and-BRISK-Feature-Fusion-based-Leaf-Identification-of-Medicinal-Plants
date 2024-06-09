@@ -10,14 +10,14 @@ SIFT-and-BRISK-Feature-Fusion-based-Leaf-Identification-of-Medicinal-Plants is a
 - **Web Application Prototype**: Provides a user-friendly interface for real-time plant identification.
 
   ### Innovation
-- **Digital Image Processing and Machine Learning 
+- Digital Image Processing and Machine Learning 
 Integration
-- **Geolocation Data Integration
+- Geolocation Data Integration
  Specification
-- **Accurate prediction with detailed information of 
+- Accurate prediction with detailed information of 
 predicted plants
-- **Rural Plant Significance
-- **Interactive User Platform
+- Rural Plant Significance
+- Interactive User Platform
  
 ### Methodology
 1. **Dataset Collection**: Images of leaves from 9 medicinal plants were collected from natural habitats.
@@ -38,7 +38,7 @@ The dataset includes images from the following plants:
 - Tulsi
 - Giant Milkweed
   
-(The link of dataset will be providing soon )
+###The link of dataset = https://drive.google.com/drive/folders/1D8Gcu8mfH0-kx-R7ntmHvGXs1MHmjHOJ 
 
 ### System Architecture
 The system architecture involves several stages:
